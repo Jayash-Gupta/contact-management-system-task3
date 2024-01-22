@@ -31,7 +31,12 @@ const ContactList = ({ filter: { name, date, countryCode, phoneNumber } }) => {
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
-
+  const handleCheckboxChange = () => {
+    setAllChecked(!allChecked);
+    const updatedContacts = [...contacts];
+    updatedContacts.forEach((contact) => (contact.isSelected = !allChecked));
+    setContacts(updatedContacts);
+  };
   const filteredContacts = contacts.filter((contact) => {
     if (name && !contact.name.toLowerCase().includes(name.toLowerCase())) {
       return false;
@@ -74,7 +79,8 @@ const ContactList = ({ filter: { name, date, countryCode, phoneNumber } }) => {
               <input
                 type="checkbox"
                 checked={allChecked}
-                onChange={() => setAllChecked(!allChecked)}
+                // onChange={() => setAllChecked(!allChecked)}
+                onChange={handleCheckboxChange}
               ></input>
             </th>
             <th>Name</th>
