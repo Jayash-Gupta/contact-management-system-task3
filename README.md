@@ -1,5 +1,6 @@
-Contact Management System
-Overview
+****Contact Management System****
+
+**Overview**
 
 Welcome to the Contact Management System project! This application is designed to manage contacts efficiently. It allows you to import contacts from CSV or XLSX files, store them in MongoDB, and perform various operations such as retrieval, filtering, and downloading of contacts.
 Installation
@@ -14,7 +15,7 @@ To set up the project, follow these steps:
       bash
       npm run build
 
-Usage
+**Usage**
 Running the Frontend
 
   Start the frontend application:
@@ -29,7 +30,7 @@ Running the Frontend
       npm start
       //This command initiates the backend server for handling data storage and retrieval.
 
-Features
+**Features**
 
     Import Contacts:
         Import contacts from CSV or XLSX files.
@@ -47,7 +48,7 @@ Features
     Download Selected Contacts:
         Download selected contacts in CSV format with the click of a button.
 
-Contribution
+**Contribution**
 
 If you would like to contribute to the project, please follow these steps:
 
@@ -56,7 +57,7 @@ If you would like to contribute to the project, please follow these steps:
     Make changes and test thoroughly.
     Submit a pull request with a detailed explanation of the changes.
 
-Issues
+**Issues**
 
 If you encounter any issues or have suggestions for improvement, please open an issue on the project's GitHub repository.
 License
